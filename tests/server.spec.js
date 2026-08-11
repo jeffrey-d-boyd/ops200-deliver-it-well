@@ -43,7 +43,7 @@ describe('server/app.js', function() {
     .get('/')
     .end((err, res) => {
       expect(err).not.exist;
-      expect(JSON.stringify(res.text)).to.contain("You're serving up the public folder.");
+      expect(JSON.stringify(res.text)).to.contain("You're serving up the public folder, but do your tests pass?");
       done();
     });
   });
